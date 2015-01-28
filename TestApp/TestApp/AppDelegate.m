@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 // GA
 #import "GAI.h"
+// Parse
+#import <Parse/Parse.h>
+
 #import "Constants.h"
 
 @interface AppDelegate ()
@@ -36,9 +39,50 @@
     [[GAI sharedInstance] trackerWithTrackingId:GOOGLEA_APP_ID];
     
     
+    
+    // Parse
+    [Parse setApplicationId:PARSE_COM_APP_ID
+                  clientKey:PARSE_COM_CLIENT_KEY];
+    
+    // Register for Push Notitications
+    // For iOS 8 only.
+    /*
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+     */
+    // Let the device know we want to receive push notifications For iOS 7
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+
+    // Look... which types of push notifications are enabled through
+  //  UIRemoteNotificationType enabledTypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
     return YES;
 }
 
+// Parse
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+    
+    NSLog(@"My token is: %@", deviceToken);
+}
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+    NSLog(@"Failed to get token, error: %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+}
+
+///
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

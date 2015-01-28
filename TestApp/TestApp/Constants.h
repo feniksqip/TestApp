@@ -17,8 +17,8 @@
 
 
 // Parse.com Information
-#define PARSE.COM_APP_ID                                @"zjefEJuBMdkImxH8A9DQJzlBgTCZXW35vyzkkwbA"
-#define PARSE.COM_CLIENT_KEY                            @"drBIzTEUmnMGXsFnLokn24w5EPwlC94lhtfR0oE7"
+#define PARSE_COM_APP_ID                                @"zjefEJuBMdkImxH8A9DQJzlBgTCZXW35vyzkkwbA"
+#define PARSE_COM_CLIENT_KEY                            @"drBIzTEUmnMGXsFnLokn24w5EPwlC94lhtfR0oE7"
 
 
 

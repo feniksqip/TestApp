@@ -40,6 +40,7 @@
 		84F485931A78E76600ACEB4F /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F485981A78E76600ACEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F485991A78E76600ACEB4F /* TestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppTests.m; sourceTree = "<group>"; };
+		84F485A41A78E82C00ACEB4F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		84F4857C1A78E76600ACEB4F /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				84F485A31A78E7DB00ACEB4F /* Classes */,
 				84F485811A78E76600ACEB4F /* AppDelegate.h */,
 				84F485821A78E76600ACEB4F /* AppDelegate.m */,
 				84F485841A78E76600ACEB4F /* ViewController.h */,
@@ -117,6 +119,14 @@
 				84F485981A78E76600ACEB4F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F485A31A78E7DB00ACEB4F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84F485A41A78E82C00ACEB4F /* Constants.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +178,7 @@
 				TargetAttributes = {
 					84F485791A78E76600ACEB4F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 46DPC8PJJ2;
 					};
 					84F485921A78E76600ACEB4F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -343,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29f15d09-ae66-4a82-bc76-b3ff5da88bd8";
 			};
 			name = Debug;
 		};
@@ -353,9 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29f15d09-ae66-4a82-bc76-b3ff5da88bd8";
 			};
 			name = Release;
 		};

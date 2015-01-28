@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+// GA
+#import "GAITrackedViewController.h"
+
+//@interface ViewController : UIViewController
+@interface ViewController : GAITrackedViewController
 
 
 @end

@@ -11,9 +11,9 @@
 
 
 // Google Analytics Information
-#define GA_APP_ID                                       @"UA-59024144-1"
-#define GA_APP_NAME                                     @"TestApp"
-#define GA_USER_NAME                                    @"feniksqip"
+#define GOOGLEA_APP_ID                                       @"UA-59024144-1"
+#define GOOGLEA_APP_NAME                                     @"TestApp"
+#define GOOGLEA_USER_NAME                                    @"feniksqip"
 
 
 // Parse.com Information

@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="2336" y="886"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="CjE-cz-hdZ">
             <objects>
-                <viewController id="ia9-sq-AxG" sceneMemberID="viewController">
+                <viewController id="ia9-sq-AxG" customClass="ShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IfZ-sf-TQ4"/>
                         <viewControllerLayoutGuide type="bottom" id="pNV-X6-UlC"/>

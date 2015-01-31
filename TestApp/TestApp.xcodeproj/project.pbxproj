@@ -12,6 +12,7 @@
 		848F46391A7CDB8F00629A82 /* InterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F46381A7CDB8F00629A82 /* InterestViewController.m */; };
 		848F463C1A7CE09800629A82 /* SelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F463B1A7CE09800629A82 /* SelectedViewController.m */; };
 		848F463F1A7CE1B600629A82 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F463E1A7CE1B600629A82 /* WebViewController.m */; };
+		848F46421A7CE49800629A82 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F46411A7CE49800629A82 /* ShareViewController.m */; };
 		84F485801A78E76600ACEB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4857F1A78E76600ACEB4F /* main.m */; };
 		84F485831A78E76600ACEB4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F485821A78E76600ACEB4F /* AppDelegate.m */; };
 		84F485861A78E76600ACEB4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F485851A78E76600ACEB4F /* ViewController.m */; };
@@ -61,6 +62,8 @@
 		848F463B1A7CE09800629A82 /* SelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedViewController.m; sourceTree = "<group>"; };
 		848F463D1A7CE1B600629A82 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		848F463E1A7CE1B600629A82 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		848F46401A7CE49800629A82 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		848F46411A7CE49800629A82 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		84F4857A1A78E76600ACEB4F /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F4857E1A78E76600ACEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F4857F1A78E76600ACEB4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				84F485871A78E76600ACEB4F /* Main.storyboard */,
 				848F463D1A7CE1B600629A82 /* WebViewController.h */,
 				848F463E1A7CE1B600629A82 /* WebViewController.m */,
+				848F46401A7CE49800629A82 /* ShareViewController.h */,
+				848F46411A7CE49800629A82 /* ShareViewController.m */,
 				84F4858A1A78E76600ACEB4F /* Images.xcassets */,
 				84F4858C1A78E76600ACEB4F /* LaunchScreen.xib */,
 				84F4857D1A78E76600ACEB4F /* Supporting Files */,
@@ -399,6 +404,7 @@
 				848F46361A7CD99B00629A82 /* SecondNavigationController.m in Sources */,
 				84F485801A78E76600ACEB4F /* main.m in Sources */,
 				848F46331A7CD97300629A82 /* MainNavigationController.m in Sources */,
+				848F46421A7CE49800629A82 /* ShareViewController.m in Sources */,
 				848F463C1A7CE09800629A82 /* SelectedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

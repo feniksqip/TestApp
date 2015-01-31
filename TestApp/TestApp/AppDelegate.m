@@ -20,7 +20,44 @@
 
 @implementation AppDelegate
 
-
+//r
+//- (NSUInteger) application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+//{
+//    if(self.shouldRotate)
+//    {
+//        self.shouldRotate = NO;
+//        return UIInterfaceOrientationMaskLandscapeRight;
+//        //        return UIInterfaceOrientationMaskLandscapeRight;
+//    }
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+- (NSUInteger)supportedInterfaceOrientations
+{
+    
+    //    if (IS_IPAD) {
+    //        return UIInterfaceOrientationMaskLandscape;
+    //    }
+    
+    // Do not return UIInterfaceOrientationPortrait
+    return UIInterfaceOrientationMaskPortrait;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    //	(iOS 6)
+    //	Force to portrait
+    return UIInterfaceOrientationPortrait;
+}
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    //	(iOS 5)
+    //	Only allow rotation to portrait
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+- (BOOL)shouldAutorotate
+{
+    return NO; // was YES
+}
+//r
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     

@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+// r
+@property (assign, nonatomic) BOOL shouldRotate;
 @end
 

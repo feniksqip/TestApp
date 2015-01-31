@@ -33,5 +33,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+- (IBAction)exitSegueForModal:(UIStoryboardSegue *)segue
+{
+}
 @end

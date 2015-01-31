@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848F46331A7CD97300629A82 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F46321A7CD97300629A82 /* MainNavigationController.m */; };
+		848F46361A7CD99B00629A82 /* SecondNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F46351A7CD99B00629A82 /* SecondNavigationController.m */; };
+		848F46391A7CDB8F00629A82 /* InterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F46381A7CDB8F00629A82 /* InterestViewController.m */; };
+		848F463C1A7CE09800629A82 /* SelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F463B1A7CE09800629A82 /* SelectedViewController.m */; };
+		848F463F1A7CE1B600629A82 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F463E1A7CE1B600629A82 /* WebViewController.m */; };
 		84F485801A78E76600ACEB4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4857F1A78E76600ACEB4F /* main.m */; };
 		84F485831A78E76600ACEB4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F485821A78E76600ACEB4F /* AppDelegate.m */; };
 		84F485861A78E76600ACEB4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F485851A78E76600ACEB4F /* ViewController.m */; };
@@ -46,6 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		848F46311A7CD97300629A82 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		848F46321A7CD97300629A82 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		848F46341A7CD99B00629A82 /* SecondNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondNavigationController.h; sourceTree = "<group>"; };
+		848F46351A7CD99B00629A82 /* SecondNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondNavigationController.m; sourceTree = "<group>"; };
+		848F46371A7CDB8F00629A82 /* InterestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestViewController.h; sourceTree = "<group>"; };
+		848F46381A7CDB8F00629A82 /* InterestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestViewController.m; sourceTree = "<group>"; };
+		848F463A1A7CE09800629A82 /* SelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedViewController.h; sourceTree = "<group>"; };
+		848F463B1A7CE09800629A82 /* SelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedViewController.m; sourceTree = "<group>"; };
+		848F463D1A7CE1B600629A82 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		848F463E1A7CE1B600629A82 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		84F4857A1A78E76600ACEB4F /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F4857E1A78E76600ACEB4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F4857F1A78E76600ACEB4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +143,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848F46301A7CD93E00629A82 /* Navigation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				848F46311A7CD97300629A82 /* MainNavigationController.h */,
+				848F46321A7CD97300629A82 /* MainNavigationController.m */,
+				848F46341A7CD99B00629A82 /* SecondNavigationController.h */,
+				848F46351A7CD99B00629A82 /* SecondNavigationController.m */,
+			);
+			name = "Navigation Controllers";
+			sourceTree = "<group>";
+		};
 		84F485711A78E76600ACEB4F = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +180,13 @@
 				84F485821A78E76600ACEB4F /* AppDelegate.m */,
 				84F485841A78E76600ACEB4F /* ViewController.h */,
 				84F485851A78E76600ACEB4F /* ViewController.m */,
+				848F46371A7CDB8F00629A82 /* InterestViewController.h */,
+				848F46381A7CDB8F00629A82 /* InterestViewController.m */,
+				848F463A1A7CE09800629A82 /* SelectedViewController.h */,
+				848F463B1A7CE09800629A82 /* SelectedViewController.m */,
 				84F485871A78E76600ACEB4F /* Main.storyboard */,
+				848F463D1A7CE1B600629A82 /* WebViewController.h */,
+				848F463E1A7CE1B600629A82 /* WebViewController.m */,
 				84F4858A1A78E76600ACEB4F /* Images.xcassets */,
 				84F4858C1A78E76600ACEB4F /* LaunchScreen.xib */,
 				84F4857D1A78E76600ACEB4F /* Supporting Files */,
@@ -191,6 +223,7 @@
 		84F485A31A78E7DB00ACEB4F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				848F46301A7CD93E00629A82 /* Navigation Controllers */,
 				84F485D81A78F1B000ACEB4F /* For Parse */,
 				84F485A41A78E82C00ACEB4F /* Constants.h */,
 				84F485BB1A78F0C500ACEB4F /* parse-library-1 */,
@@ -359,9 +392,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848F46391A7CDB8F00629A82 /* InterestViewController.m in Sources */,
 				84F485861A78E76600ACEB4F /* ViewController.m in Sources */,
 				84F485831A78E76600ACEB4F /* AppDelegate.m in Sources */,
+				848F463F1A7CE1B600629A82 /* WebViewController.m in Sources */,
+				848F46361A7CD99B00629A82 /* SecondNavigationController.m in Sources */,
 				84F485801A78E76600ACEB4F /* main.m in Sources */,
+				848F46331A7CD97300629A82 /* MainNavigationController.m in Sources */,
+				848F463C1A7CE09800629A82 /* SelectedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +612,7 @@
 				84F4859F1A78E76600ACEB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F485A01A78E76600ACEB4F /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +621,7 @@
 				84F485A21A78E76600ACEB4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

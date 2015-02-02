@@ -153,8 +153,16 @@
 - (IBAction)msg5Action:(id)sender {
     [self changeMessageStatus:[NSNumber numberWithInt:205]];
     
-//    self.msgTextField.editing = YES;
+   // self.messageTextField.editing = YES;
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self changeMessageStatus:[NSNumber numberWithInt:205]];
+}
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    return YES;
+}
+
 - (IBAction)okBtnAction:(id)sender {
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -162,6 +170,7 @@
     [defaults setObject:self.messageIndex forKey:@"MESSAGE_INDEX"];
     
     NSString *strColor = @"greenColor";
+//    NSString *colorString = [CIColor colorWithCGColor:(__bridge CGColorRef)([UIColor orangeColor])].stringRepresentation;
     NSString *strMessage = @"Privet Mir !!!";
     [defaults setObject:strColor forKey:@"COLOR"];
     [defaults setObject:strMessage forKey:@"MESSAGE"];
@@ -169,6 +178,17 @@
     [defaults synchronize];
     
     NSLog(@"--- Data saved to UserDefaults ---");
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    for (touches in self.view.subviews) {
+        [self.messageTextField resignFirstResponder];
+    }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.messageTextField resignFirstResponder];
+    return YES;
 }
 
 @end

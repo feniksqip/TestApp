@@ -11,7 +11,7 @@
 #import "GAITrackedViewController.h"
 
 //@interface InterestViewController : UIViewController
-@interface InterestViewController : GAITrackedViewController
+@interface InterestViewController : GAITrackedViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *var1;
 @property (weak, nonatomic) IBOutlet UIButton *var2;
 @property (weak, nonatomic) IBOutlet UIButton *var3;
@@ -39,5 +39,6 @@
 
 
 - (IBAction)okBtnAction:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
 
 @end

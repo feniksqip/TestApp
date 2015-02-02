@@ -20,7 +20,17 @@
     self.screenName = @"SelectedViewController";
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    self.view.backgroundColor = [[UIColor class] performSelector:NSSelectorFromString([defaults objectForKey:@"COLOR"])] ;
+    //self.view.backgroundColor = [[UIColor class] performSelector:NSSelectorFromString([defaults objectForKey:@"COLOR"])] ;
+  //  self.view.backgroundColor = (UIColor*) [defaults objectForKey:@"COLOR"];
+    
+    SEL selector = NSSelectorFromString([defaults objectForKey:@"COLOR"]);
+    UIColor *color = [UIColor blackColor];
+    if ([UIColor respondsToSelector:selector]) {
+        color = [UIColor performSelector:selector];
+    }
+    self.view.backgroundColor = color;
+    
+    
     self.messageLabel.text = [defaults objectForKey:@"MESSAGE"];
 }
 
@@ -29,7 +39,7 @@
     // Do any additional setup after loading the view.
     
     
-    self.view.backgroundColor = [UIColor orangeColor];
+  //  self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning {

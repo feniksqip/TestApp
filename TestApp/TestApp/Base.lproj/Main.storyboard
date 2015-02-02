@@ -173,11 +173,6 @@
                                     <action selector="msg5Action:" destination="Kf7-Nd-scj" eventType="touchUpInside" id="xQU-bi-HnK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMM-pv-gxs">
-                                <rect key="frame" x="16" y="413" width="259" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYa-FS-pUs">
                                 <rect key="frame" x="16" y="458" width="176" height="30"/>
                                 <state key="normal" title="OK">
@@ -188,11 +183,20 @@
                                     <segue destination="xo3-HG-RL3" kind="modal" id="am0-ht-p80"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMM-pv-gxs">
+                                <rect key="frame" x="16" y="413" width="259" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kf7-Nd-scj" id="UQm-8l-fqz"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Выбор интереса" id="hFg-Qn-UgN"/>
                     <connections>
+                        <outlet property="messageTextField" destination="dMM-pv-gxs" id="G7w-rB-L5H"/>
                         <outlet property="msg1" destination="C5e-eH-bOT" id="LeT-Su-ri3"/>
                         <outlet property="msg2" destination="V3x-1I-tDN" id="jvi-Ti-TeN"/>
                         <outlet property="msg3" destination="NSt-cK-Kyz" id="Kg0-Bz-g8y"/>

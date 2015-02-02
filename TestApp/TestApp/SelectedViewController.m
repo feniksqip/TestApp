@@ -18,6 +18,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.screenName = @"SelectedViewController";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.view.backgroundColor = [[UIColor class] performSelector:NSSelectorFromString([defaults objectForKey:@"COLOR"])] ;
+    self.messageLabel.text = [defaults objectForKey:@"MESSAGE"];
 }
 
 - (void)viewDidLoad {

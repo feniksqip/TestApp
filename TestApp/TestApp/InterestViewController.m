@@ -160,6 +160,12 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.buttonIndex forKey:@"BUTTON_INDEX"];
     [defaults setObject:self.messageIndex forKey:@"MESSAGE_INDEX"];
+    
+    NSString *strColor = @"greenColor";
+    NSString *strMessage = @"Privet Mir !!!";
+    [defaults setObject:strColor forKey:@"COLOR"];
+    [defaults setObject:strMessage forKey:@"MESSAGE"];
+    
     [defaults synchronize];
     
     NSLog(@"--- Data saved to UserDefaults ---");

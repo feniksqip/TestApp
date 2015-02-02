@@ -13,4 +13,5 @@
 //@interface SelectedViewController : UIViewController
 @interface SelectedViewController : GAITrackedViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @end

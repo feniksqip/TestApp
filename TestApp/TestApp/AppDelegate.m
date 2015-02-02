@@ -76,6 +76,9 @@
     [[GAI sharedInstance] trackerWithTrackingId:GOOGLEA_APP_ID];
     
     
+    // v3 Debug mode // It can delete, ...?
+    [[GAI sharedInstance].logger setLogLevel:kGAILogLevelVerbose];
+    
     
     // Parse
     [Parse setApplicationId:PARSE_COM_APP_ID

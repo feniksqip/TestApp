@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+// GA
+#import "GAITrackedViewController.h"
 
-@interface InterestViewController : UIViewController
+//@interface InterestViewController : UIViewController
+@interface InterestViewController : GAITrackedViewController
 @property (weak, nonatomic) IBOutlet UIButton *var1;
 @property (weak, nonatomic) IBOutlet UIButton *var2;
 @property (weak, nonatomic) IBOutlet UIButton *var3;

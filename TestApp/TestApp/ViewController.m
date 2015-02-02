@@ -55,7 +55,7 @@
 // GA
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.screenName = @"View Controller";
+    self.screenName = @"Main Controller";
     //r
     //	We're going onto the screen, disable auto rotations
     canRotateToAllOrientations = NO;

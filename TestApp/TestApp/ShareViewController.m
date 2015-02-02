@@ -14,6 +14,12 @@
 
 @implementation ShareViewController
 
+// GA
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"ShareViewController";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

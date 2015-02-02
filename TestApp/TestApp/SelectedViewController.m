@@ -14,9 +14,18 @@
 
 @implementation SelectedViewController
 
+// GA
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.screenName = @"SelectedViewController";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+// GA
+#import "GAITrackedViewController.h"
 
-@interface ShareViewController : UIViewController
+
+//@interface ShareViewController : UIViewController
+@interface ShareViewController : GAITrackedViewController
 
 @end

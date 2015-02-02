@@ -228,9 +228,9 @@
 		84F485A31A78E7DB00ACEB4F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84F485A41A78E82C00ACEB4F /* Constants.h */,
 				848F46301A7CD93E00629A82 /* Navigation Controllers */,
 				84F485D81A78F1B000ACEB4F /* For Parse */,
-				84F485A41A78E82C00ACEB4F /* Constants.h */,
 				84F485BB1A78F0C500ACEB4F /* parse-library-1 */,
 				84F485BA1A78EC1900ACEB4F /* For Analytics */,
 				84F485A51A78EAC300ACEB4F /* Google Analytics */,

@@ -18,7 +18,10 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
-    
+  //  [super viewWillAppear:animated];
+    // GA
+    self.screenName = @"InterestViewController";
+    //
     self.buttonIndex = [NSNumber numberWithInt:101];
     self.messageIndex = [NSNumber numberWithInt:201];
     
@@ -74,17 +77,17 @@
     NSNumber *select = (NSNumber*) sender;
 
     if ([select isEqualToNumber:[NSNumber numberWithInt:101]]) {
-        buttonIndex = [NSNumber numberWithInt:101];
+        self.buttonIndex = [NSNumber numberWithInt:101];
         self.var1.backgroundColor = [UIColor orangeColor];
         self.var2.backgroundColor = nil;
         self.var3.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:102]]) {
-        buttonIndex = [NSNumber numberWithInt:102];
+        self.buttonIndex = [NSNumber numberWithInt:102];
         self.var2.backgroundColor = [UIColor greenColor];
         self.var1.backgroundColor = nil;
         self.var3.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:103]]) {
-        buttonIndex = [NSNumber numberWithInt:103];
+        self.buttonIndex = [NSNumber numberWithInt:103];
         self.var3.backgroundColor = [UIColor redColor];
         self.var1.backgroundColor = nil;
         self.var2.backgroundColor = nil;
@@ -94,35 +97,35 @@
     NSNumber *select = (NSNumber*) sender;
     
     if ([select isEqualToNumber:[NSNumber numberWithInt:201]]) {
-        buttonIndex = [NSNumber numberWithInt:201];
+        self.messageIndex = [NSNumber numberWithInt:201];
         self.msg1.backgroundColor = [UIColor grayColor];
         self.msg2.backgroundColor = nil;
         self.msg3.backgroundColor = nil;
         self.msg4.backgroundColor = nil;
         self.msg5.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:202]]) {
-        buttonIndex = [NSNumber numberWithInt:202];
+        self.messageIndex = [NSNumber numberWithInt:202];
         self.msg2.backgroundColor = [UIColor grayColor];
         self.msg1.backgroundColor = nil;
         self.msg3.backgroundColor = nil;
         self.msg4.backgroundColor = nil;
         self.msg5.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:203]]) {
-        buttonIndex = [NSNumber numberWithInt:203];
+        self.messageIndex = [NSNumber numberWithInt:203];
         self.msg3.backgroundColor = [UIColor grayColor];
         self.msg1.backgroundColor = nil;
         self.msg2.backgroundColor = nil;
         self.msg4.backgroundColor = nil;
         self.msg5.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:204]]) {
-        buttonIndex = [NSNumber numberWithInt:204];
+        self.messageIndex = [NSNumber numberWithInt:204];
         self.msg4.backgroundColor = [UIColor grayColor];
         self.msg1.backgroundColor = nil;
         self.msg2.backgroundColor = nil;
         self.msg3.backgroundColor = nil;
         self.msg5.backgroundColor = nil;
     } else if ([select isEqualToNumber:[NSNumber numberWithInt:205]]) {
-        buttonIndex = [NSNumber numberWithInt:205];
+        self.messageIndex = [NSNumber numberWithInt:205];
         self.msg5.backgroundColor = [UIColor grayColor];
         self.msg1.backgroundColor = nil;
         self.msg2.backgroundColor = nil;
@@ -149,6 +152,8 @@
 
 - (IBAction)msg5Action:(id)sender {
     [self changeMessageStatus:[NSNumber numberWithInt:205]];
+    
+//    self.msgTextField.editing = YES;
 }
 - (IBAction)okBtnAction:(id)sender {
 

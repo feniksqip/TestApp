@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+// GA
+#import "GAITrackedViewController.h"
 
-@interface SelectedViewController : UIViewController
+//@interface SelectedViewController : UIViewController
+@interface SelectedViewController : GAITrackedViewController
 
 @end

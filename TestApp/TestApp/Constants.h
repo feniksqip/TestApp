@@ -21,6 +21,8 @@
 #define PARSE_COM_CLIENT_KEY                            @"drBIzTEUmnMGXsFnLokn24w5EPwlC94lhtfR0oE7"
 
 
+// MixPanel.com
+#define MIXPANEL_COM_TOKEN                              @"411372785f6caf2f3ef06fe7ae3cb2a4"
 
 
 #endif

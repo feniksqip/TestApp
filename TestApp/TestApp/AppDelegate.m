@@ -11,6 +11,8 @@
 #import "GAI.h"
 // Parse
 #import <Parse/Parse.h>
+// MixPanel
+#import "Mixpanel.h"
 
 #import "Constants.h"
 
@@ -101,6 +103,10 @@
 
     // Look... which types of push notifications are enabled through
   //  UIRemoteNotificationType enabledTypes = [[UIApplication sharedApplication] enabledRemoteNotificationTypes];
+    
+    // Initialize Mixpanel
+    [Mixpanel sharedInstanceWithToken:MIXPANEL_COM_TOKEN];
+    
     return YES;
 }
 
